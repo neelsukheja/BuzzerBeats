@@ -1,0 +1,72 @@
+int plugkey = 8;
+int buzzer = 12;
+int switchread;
+int prev = 1;
+int dt = 250;
+int dt1 = 60;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(plugkey, INPUT);
+  pinMode(buzzer, OUTPUT);
+  Serial.begin(9600); // Initialize serial communication
+}
+
+void loop() {
+  switchread = digitalRead(plugkey);
+  Serial.println(switchread);
+  delay(dt); 
+
+  if(prev == 1){
+    if(switchread == 0){
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt1);
+      digitalWrite(buzzer, HIGH);;
+      delay(dt1);
+      digitalWrite(buzzer, LOW);
+      delay(dt);
+    }
+  }
+}
