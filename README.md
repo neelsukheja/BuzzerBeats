@@ -5,6 +5,12 @@
 
 This Arduino Uno project is a basic doorbell system that uses a switch to trigger a buzzer. When the switch is pressed, the buzzer plays a short melody.
 
+
+
+https://github.com/neelsukheja/BuzzerBeats/assets/158506905/34e84149-5795-4226-8a40-2e93f630cd1d
+
+
+
 ## Components
 
 - Arduino Uno
